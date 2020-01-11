@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Electrolize', sans-serif;
+
+  letter-spacing: 2px;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background: url('../img/bg.gif');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.process {
+    overflow: auto;
+    background:#0b1f2d;
+    color: #faaba1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    height: 480px;
+    bottom: 0;
+    width: 560px;
+    padding: 0px;
+    z-index: 2;
+    box-shadow: 0px 10px 30px 7px #00000085;
+    border-radius: 6px;
+}
+.tab {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    /* border-radius: 8px; */
+    margin-right: 1px;
+    float: left;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 18px;
+    transition: 0.3s;
+    font-size: 16px;
+    background:#ffffff00;
+    color: #faaba1;
+    border: 1px solid transparent;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #fff;
+    background: #90486f;
+    box-shadow: 0px 0px 28px -8px black;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: #90486f;
+color: #fff;
+box-shadow: 0px 0px 13px -2px black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  float: left;
+  width: 100%;
+  padding: 26px;
+  font-size: 16px;
+}
+.input {
+    background: transparent;
+    font-size: 16px;
+    padding: 6px 0px;
+    width: 60px;
+    border: 0px;
+    border-bottom: 1px solid #90486f;
+    color:#fff;
+}
+.input:focus{
+  outline: -webkit-focus-ring-color auto 0px;
+  outline-width: 0px;
+}
+.button{
+  border-radius: 0px;
+      outline: none;
+      cursor: pointer;
+      padding: 6px 18px;
+      transition: 0.3s;
+      font-size: 16px;
+      color: #3355b6;
+      background-color: #90486f;
+      color: #fff;
+      box-shadow:0px 0px 14px -4px black;
+      border:0px;
+  }
+/* Change background color of buttons on hover */
+.button:hover {
+  color: #fff;
+  background: #90486f;
+  box-shadow: 0px 0px 28px -8px black;
+}
+
+/* Create an active/current tablink class */
+.stack-holder{
+  width: 100%;
+  float: left;
+  display: block;
+  margin-top:40px;
+}
+.fullList {
+    background: #f8f8f800;
+    color: #faaba1;
+    text-align: center;
+    border: 0px;
+    font-size: 16px;
+    padding: 10px 10px;
+    width: 40%;
+    margin:0 auto;
+    float: left;
+    display: block;
+    margin-top: 20px;
+    box-shadow: 0px 9px 18px -5px rgba(0,0,0,0.31);
+    border: 1px solid #90486f;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.fullListResult{
+  background: #90486f;
+  color: #faaba1;
+  border: 0px;
+  font-size: 16px;
+  padding: 6px 10px;
+  width: 100%;
+  float: left;
+  display: block;
+  margin-top:20px;
+  border:1px solid orange;
+}
+span.stackElement {
+    display: block;
+    padding: 10px 20px;
+    margin: 2px;
+    background: #f6a4a517;
+    }
+.fullQueueNonRecResult, .fullQueueRecResult{
+  width: 100%;
+  display: block;
+  border:1px solid #90486f;
+  background: transparent;
+  padding: 10px;
+  margin-top: 10px;
+}
+.fullQueueNonRecResult span.stackElement, .fullQueueRecResult span.stackElement{
+  display: inline-block;
+}
+@media screen and (max-width:500px){
+  .process{
+    width: 100%;
+  }
+  .button{
+    display:block;
+    width: 100%;
+    margin:6px auto;
+    padding:12px;
+  }
+  .fullList,.fullListResult{
+    margin-top: 0px;
+  }
+}

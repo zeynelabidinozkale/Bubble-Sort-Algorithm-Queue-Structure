@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithms Ödev 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body onload="defaultOpen()">
+    <div class="process">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'lin')" id="defaultOpen">Queue</button>
+        <button class="tablinks" onclick="openTab(event, 'nrec')">NonRecursive Sort</button>
+        <button class="tablinks" onclick="openTab(event, 'rec')">Recursive Sort</button>
+      </div>
+
+      <div id="lin" class="tabcontent">
+        <label for="">Kuyruga Ekle : </label>
+        <input type="text" class="input" id="enqueueInput">
+        <button type="button" class="button" id="enqueueButton" name="button">ekle</button>
+        <button type="button" class="button" id="dequeueButton" name="button">Sil</button>
+        <button type="button" class="button" id="searchQueue" name="button">search</button>
+<br>
+              <div class="fullList">
+                Kuyruk boş
+              </div>
+      </div>
+
+      <div id="nrec" class="tabcontent">
+            <button type="button" class="button" id="nonRecSortButton" name="button">Selection Sort</button>
+              <br>
+            <div class="fullQueueNonRecResult">
+
+            </div>
+      </div>
+      <div id="rec" class="tabcontent">
+        <button type="button" class="button" id="recSortButton" name="button">Recursive Selection Sort</button>
+        <br>
+        <div class="fullQueueRecResult">
+
+        </div>
+      </div>
+
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- stack sınıfımız-->
+    <script src="js/linkedListQueue.js"></script>
+    <!-- Kullanıcı işlemlerimiz -->
+    <script src="js/events.js"></script>
+  </body>
+</html>
